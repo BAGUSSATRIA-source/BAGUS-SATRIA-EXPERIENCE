@@ -403,9 +403,10 @@ footer {
   .hamburger { display: flex; }
 
   #home, .section { padding: 4.5rem 1.5rem; }
-  #home { padding-top: 5.5rem; }
-  .hero-inner { grid-template-columns: 1fr; }
-  .hero-photo-col { display: none; }
+  #home { padding-top: 5.5rem; min-height: auto; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-sub { font-size: .95rem; }
+  #typed { font-size: .9rem; }
   .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
   .stat-row { grid-template-columns: repeat(2,1fr); }
   .exp-cols { grid-template-columns: 1fr; gap: 2rem; }
@@ -415,7 +416,15 @@ footer {
 }
 
 @media(max-width:480px){
-  h1.hero-name { font-size: 2.6rem; }
+  nav { padding: .75rem 1rem; }
+  #home { padding: 4rem 1rem 3rem; }
+  h1.hero-name { font-size: 2rem; line-height: 1; margin-bottom: 1rem; }
+  .hero-tag { margin-bottom: 1rem; }
+  .hero-sub { font-size: .85rem; margin-bottom: .75rem; }
+  .hero-typed-wrap { min-height: 1.2rem; margin-bottom: 1.2rem; }
+  #typed { font-size: .78rem; }
+  .hero-btns { gap: .5rem; }
+  .btn { padding: .65rem 1.5rem; font-size: .75rem; }
   .s-title { font-size: 1.7rem; }
   .stat-row { grid-template-columns: 1fr; }
   .proj-grid { grid-template-columns: 1fr; }
